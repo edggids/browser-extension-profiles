@@ -1,3 +1,5 @@
+![test workflow results](https://github.com/edggids/browser-extension-profiles/actions/workflows/main.yml/badge.svg)
+
 ## WIP
 
 # Extension Profile Manager
