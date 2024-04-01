@@ -1,0 +1,26 @@
+@use '../mixins/maps' as map;
+@use '../config';
+
+$directionVariations: (
+    '': '',
+    't': '-top',
+    'r': '-right',
+    'b': '-bottom',
+    'l': '-left'
+);
+
+@mixin all-direction-variations($variations, $sizes, $class-prefix, $class-suffix, $property-prefix) {
+    @each $class-mid, $property-suffix in $variations {
+      @include map.to-single-property-class($sizes, '#{$class-prefix}#{$class-mid}', '#{$property-prefix}#{$property-suffix}', #{$class-suffix});
+    }
+}
+
+@include all-direction-variations($directionVariations, config.$spacing-sizes, 'p', '', 'padding');
+@include all-direction-variations($directionVariations, config.$spacing-sizes, 'm', '', 'margin');
+
+@include all-direction-variations($directionVariations, config.$spacing-sizes, 'last\\:p', ':last-child', 'padding');
+@include all-direction-variations($directionVariations, config.$spacing-sizes, 'last\\:m', ':last-child', 'margin');
+
+@include map.to-single-property-class(config.$spacing-sizes, 'gap', 'gap');
+@include map.to-single-property-class(config.$spacing-sizes, 'gap-x', 'column-gap');
+@include map.to-single-property-class(config.$spacing-sizes, 'gap-y', 'row-gap');

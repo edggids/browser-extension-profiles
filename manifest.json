@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Extension Profile Manager",
+  "version": "0.0.9",
+  "description": "Simple browser extension that empowers you to create custom profiles for your enabled extensions. This extension lets you selectively activate only the extensions essential for your specific tasks, optimizing your browsing efficiency.",
+  "action": {
+    "default_icon": {
+      "16": "dist/icon/profile-switcher_16.png",
+      "24": "dist/icon/profile-switcher_24.png",
+      "32": "dist/icon/profile-switcher_32.png",
+      "48": "dist/icon/profile-switcher_48.png",
+      "64": "dist/icon/profile-switcher_64.png",
+      "128": "dist/icon/profile-switcher_128.png",
+      "256": "dist/icon/profile-switcher_256.png"
+    },
+    "default_popup": "dist/index.html"
+  },
+  "permissions": [
+    "management",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "dist/background.js"
+  }
+}

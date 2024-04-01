@@ -1,0 +1,27 @@
+@use '../config';
+
+$variations: (
+  'text': 'color',
+  'bg': 'background-color',
+  'border': 'border-color',
+);
+
+@mixin in-all-colors($class-name, $property, $class-suffix: ''){
+    @each $color in config.$colors {
+        #{$class-name}-#{$color}#{$class-suffix} {
+          #{$property}: var(--color-#{$color});
+        }
+    }
+}
+
+@each $class-name, $property in $variations {
+  @include in-all-colors('.#{$class-name}', $property);
+
+  @include in-all-colors('.odd\\:#{$class-name}', $property, ':nth-child(odd)');
+  @include in-all-colors('.even\\:#{$class-name}', $property, ':nth-child(even)');
+
+  @include in-all-colors('.hover\\:#{$class-name}', $property, ':hover');
+}
+
+//@include in-all-colors('.odd\\:bg', 'background-color', ':nth-child(odd)');
+//@include in-all-colors('.even\\:bg', 'background-color', ':nth-child(even)');

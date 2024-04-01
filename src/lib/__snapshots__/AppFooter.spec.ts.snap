@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AppFooter component > mounts 1`] = `
+<body>
+  <div>
+    <footer
+      class="container transition-color text-current-darker flex justify-between pb-6.5"
+      style="--color: var(--color-current-darker);"
+    />
+  </div>
+</body>
+`;
+
+exports[`AppFooter component > renders with custom style 1`] = `
+<footer
+  class="container transition-color text-current-darker flex justify-between pb-6.5"
+  style="background-color: red; --color: var(--color-current-darker);"
+/>
+`;

@@ -1,0 +1,10 @@
+.vertical-header {
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  position: absolute;
+  top: 0;
+  left: 6px;
+  height: 100%;
+  text-align: center;
+  line-height: 1;
+}

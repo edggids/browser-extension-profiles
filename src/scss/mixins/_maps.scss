@@ -1,0 +1,14 @@
+@mixin to-single-property-class($map, $prefix, $property, $suffix: '') {
+  @each $name, $value in $map {
+    @if $name == '' {
+      .#{$prefix}#{$suffix} {
+        #{$property}: $value;
+      }
+    }
+    @else {
+      .#{$prefix}-#{$name}#{$suffix} {
+        #{$property}: $value;
+      }
+    }
+  }
+}

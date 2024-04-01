@@ -1,0 +1,17 @@
+.tag {
+  --color: #1d1e1e;
+
+  cursor: pointer;
+  border: 1px dashed #A69D9D;
+}
+
+.tag .indicator {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.tag.active {
+  color: var(--color);
+  border-style: solid;
+  border-color: var(--color);
+}

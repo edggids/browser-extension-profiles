@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProfileNameInput component > mounts 1`] = `
+<body>
+  <div>
+    <div
+      class="container transition-bg bg-current-light transition-color text-current text-lg pt-2 pb-3.5 "
+      data-testid="inputGroup"
+    >
+      <span
+        class="text-xl"
+      >
+        {
+      </span>
+       
+      <span>
+        
+      </span>
+       
+      <span
+        class="text-xl"
+      >
+        }
+      </span>
+    </div>
+  </div>
+</body>
+`;

@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Tag component > mounts 1`] = `
+<body>
+  <div>
+    <span
+      class="tag transition-border-color transition-color rounded-xl p-2.75 leading-none pr-4 inline-flex items-center text-sm bg-ground"
+      style="--color: #123456;"
+    >
+      <span
+        class="indicator mr-2.75"
+      />
+    </span>
+  </div>
+</body>
+`;

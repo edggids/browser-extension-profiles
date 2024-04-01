@@ -1,0 +1,4 @@
+@use '../mixins/maps' as map;
+@use '../config';
+
+@include map.to-single-property-class(config.$rounded-sizes, 'rounded', 'border-radius');

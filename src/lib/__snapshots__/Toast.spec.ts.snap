@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Toast component > mounts 1`] = `
+<body>
+  <div>
+    <div
+      class="bg-safe-light text-safe-darker pl-4 pt-3 pb-3 text-sm flex items-center rounded-xs "
+      role="status"
+    >
+      <span
+        class="flex-1 mr-3.5 pb-1px"
+      >
+        Test Message
+      </span>
+       
+      <button
+        class="text-safe-darker pr-4 pl-4"
+        data-testid="closeButton"
+        type="button"
+      >
+        x
+      </button>
+    </div>
+  </div>
+</body>
+`;

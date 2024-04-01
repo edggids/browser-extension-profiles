@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Popup component > mounts 1`] = `
+<body>
+  <div>
+    <div
+      class="  p-2 bg-ground rounded shadow z-10"
+      role="dialog"
+    />
+  </div>
+</body>
+`;

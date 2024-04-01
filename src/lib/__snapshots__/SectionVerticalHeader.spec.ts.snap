@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SectionVerticalHeader component > mounts 1`] = `
+<body>
+  <div>
+    <section
+      class="relative "
+    >
+      <span
+        class="vertical-header text-xs uppercase transition-color text-current"
+        data-testid="title"
+      >
+        Test Title
+      </span>
+       
+      <div
+        class="container transition-bg bg-current-light pt-6 pb-2.75"
+        data-testid="contentWrapper"
+      />
+    </section>
+  </div>
+</body>
+`;

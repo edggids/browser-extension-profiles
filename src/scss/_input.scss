@@ -1,0 +1,20 @@
+input, select {
+  font-size: 1rem;
+  padding: 4px 9px;
+  line-height: 1;
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--color);
+  background-color: var(--color-ground);
+  color: var(--color);
+}
+
+input::placeholder {
+  color: var(--color-placeholder);
+  opacity: .6;
+}
+
+input.plain {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+}

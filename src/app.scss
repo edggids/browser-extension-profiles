@@ -1,0 +1,59 @@
+@use 'scss/reset';
+
+@use 'scss/font';
+@use 'scss/scrollbar';
+
+// @use 'scss/animations';
+@use 'scss/input';
+@use 'scss/checkbox';
+@use 'scss/buttons';
+
+@use 'scss/tag';
+@use 'scss/indicator';
+@use 'scss/vertical-header';
+@use 'scss/toast-section';
+
+@use 'scss/utils';
+
+:root {
+  /*color-scheme: light dark;*/
+
+  --color-ground: #FFFFFF;
+  --color-text-default: #1D1E1E;
+
+  --color-current: #319EDB;
+  --color-current-light: #F4FBFF;
+  --color-current-darker: #1772A5;
+
+  --color-safe-light: #F1F9F5;
+  --color-safe-darker: #2B7456;
+
+  --color-danger-light: #FDEFEA;
+  --color-danger-darker: #AA310D;
+
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-xl: 14px;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  text-rendering: optimizeLegibility;
+
+  color: var(--color-text-default);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  font-synthesis: none;
+
+  background-color: var(--color-ground);
+
+  width: 360px;
+  height: 500px;
+  margin: 0;
+}

@@ -1,0 +1,8 @@
+@use '../mixins/maps' as map;
+@use '../config';
+
+.columns-2 {
+  column-count: 2;
+}
+
+@include map.to-single-property-class(config.$spacing-sizes, 'gap', 'column-gap');

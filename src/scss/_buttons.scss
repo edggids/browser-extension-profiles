@@ -1,0 +1,27 @@
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  padding: 0;
+
+  color: var(--color-current-darker);
+
+  transition: color 0.2s ease-in-out;
+
+  cursor: pointer;
+}
+
+button.btn-o {
+  text-align: center;
+  transition: border-color 0.2s ease-in-out;
+
+  width: 102px;
+  padding: 6px 0;
+
+  border-color: var(--color-current-darker);
+
+  border-radius: var(--radius);
+  border-width: 1px;
+  border-style: dashed;
+  /*border: 1px dashed var(--color);*/
+}
